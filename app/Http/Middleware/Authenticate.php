@@ -4,8 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
+use Neomerx\Limoncello\Http\AuthMiddleware;
 
-class Authenticate
+class Authenticate extends AuthMiddleware
 {
     /**
      * Handle an incoming request.

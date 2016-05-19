@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(SeedAccountsTable::class);
-        $this->call(SeedUsersTable::class);
-
+        //$this->call(SeedUsersTable::class);
+        (new \Neomerx\LimoncelloIlluminate\Database\Seeds\Runner($this))->run();
     }
 }
